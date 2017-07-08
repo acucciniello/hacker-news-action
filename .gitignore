@@ -57,3 +57,8 @@ typings/
 # dotenv environment variables file
 .env
 
+# ngrok
+ngrok
+
+# Archive.zip
+Archive.zip

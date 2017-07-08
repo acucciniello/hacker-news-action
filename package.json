@@ -9,15 +9,19 @@
     "node": "~6.0"
   },
   "scripts": {
-    "lint": "eslint --fix \"**/*.js\"",
     "start": "firebase serve --only functions",
     "deploy": "firebase deploy --only functions",
     "test": "standard"
   },
   "dependencies": {
     "actions-on-google": "^1.0.0",
+    "dotenv": "^4.0.0",
     "firebase-admin": "^4.2.1",
-    "firebase-functions": "^0.5.7"
+    "firebase-functions": "^0.5.8",
+    "got": "^7.1.0",
+    "promise": "^8.0.0",
+    "request": "^2.81.0",
+    "request-promise": "^4.2.1"
   },
   "devDependencies": {
     "standard": "^10.0.2"
