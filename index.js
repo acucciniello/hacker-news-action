@@ -21,11 +21,11 @@ exports.handler = function(event, context, callback) {
   getTopNews()
     .then((output) => {
       console.log(output)
-      callback(null, {speech: output})
+      callback(null, {speech: output, data:{google:{expect_user_response: false}}})
     })
     .catch((error) => {
       console.log(error)
       var errorGet = 'We failed to get the news, try again.'
-      callback(null, {speech: errorGet})
+      callback(null, {speech: output, data:{google:{expect_user_response: false}}})
     })
 }
